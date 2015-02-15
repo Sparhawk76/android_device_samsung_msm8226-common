@@ -1,5 +1,5 @@
 # ADSP
-bin/adsprpcd #
+bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
@@ -31,17 +31,26 @@ bin/hci_qcomm_init
 vendor/lib/libbtnv.so
 
 # Camera
-bin/mm-qcamera-daemon #
+bin/mm-qcamera-daemon
 lib/hw/camera.msm8226.so
-#lib/libchromatix_ar0543_common.so
-#lib/libchromatix_ar0543_default_video.so
-#lib/libchromatix_ar0543_hfr_60.so
-#lib/libchromatix_ar0543_preview.so
-#lib/libchromatix_ar0543_snapshot.so
+lib/libchromatix_s5k6a3yx_smart_stay.so
+lib/libchromatix_s5k6a3yx_vt_hd.so
+lib/libchromatix_s5k6a3yx_vt.so
+lib/libchromatix_s5k6b2yx_common.so
+lib/libchromatix_s5k6b2yx_default_video.so
+lib/libchromatix_s5k6b2yx_preview.so
+lib/libchromatix_s5k6b2yx_smart_stay.so
+lib/libchromatix_s5k6b2yx_vt_hd.so
+lib/libchromatix_s5k6b2yx_vt.so
+lib/libchromatix_s5k6b2yx_zslshot.so
 #lib/libmmcamera_ar0543.so
+lib/libmmcamera_cac2_lib.so
+lib/libmmcamera_cac.so
+lib/libmmcamera_fidelix_eeprom.so
 lib/libmmcamera_interface.so
+lib/libmmcamera_wavelet_lib.so
 lib/libmmjpeg_interface.so
-#lib/libmm-qcamera.so
+lib/libmm-omxcore.so
 #lib/libmot_sensorlistener.so
 lib/libqomx_core.so
 vendor/lib/libjpegdhw.so
@@ -53,19 +62,29 @@ vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_sensor_modules.so
-#vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
-#vendor/lib/libmmcamera_hdr_lib.so
+vendor/lib/libmmcamera_image_stab.so
 vendor/lib/libmmcamera_imglib.so
-#vendor/lib/libmmcamera_mt9m114.so
-#vendor/lib/libmmcamera_sp1628.so
-#vendor/lib/libmmcamera_tintless_algo.so
-#vendor/lib/libmmcamera_tuning.so
-#vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libmmcamera_imx135.so
+vendor/lib/libmmcamera_imx175.so
+vendor/lib/libmmcamera_imx219.so
+vendor/lib/libmmcamera_rohm_brce064gwz_eeprom.so
+vendor/lib/libmmcamera_s5k3h5xa.so
+vendor/lib/libmmcamera_s5k4ecgx.so
+vendor/lib/libmmcamera_s5k4h5ya.so
+vendor/lib/libmmcamera_s5k4h5yb.so
+vendor/lib/libmmcamera_s5k6a3yx.so
+vendor/lib/libmmcamera_s5k6b2yx.so
+vendor/lib/libmmcamera_s5k8b1yx.so
+vendor/lib/libmmcamera_sr030pc50.so
+vendor/lib/libmmcamera_sr130pc20.so
+vendor/lib/libmmcamera_sr200pc20.so
+vendor/lib/libmmcamera_sr352.so
+lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmipl.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
@@ -78,10 +97,13 @@ etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 
 # DRM
-bin/qseecomd #
+bin/qseecomd
 lib/libdrmdecrypt.so
 lib/libWVphoneAPI.so
-#vendor/lib/drm/libdrmwvmplugin.so
+lib/drm/libdrmwvmplugin.so
+lib/drm/libomaplugin.so
+lib/drm/libfwdlockengine.so
+lib/drm/libplayreadyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
@@ -104,33 +126,16 @@ bin/fm_qsoc_patches
 # GPS
 -app/com.qualcomm.location.apk
 #-app/com.qualcomm.services.location.apk
-#-app/MotGeoFenceSvc.apk
-#bin/location-mq
-#bin/xtwifi-client
-#bin/xtwifi-inet-agent
 etc/permissions/com.qualcomm.location.xml
 etc/gps.conf
-#etc/izat.conf
-#etc/quipc.conf
 etc/sap.conf
-#etc/xtwifi.conf
-#etc/xtra_root_cert.pem
 lib/libloc_api_v02.so
-#lib/libloc_ds_api.so
-#vendor/lib/libalarmservice_jni.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
-#vendor/lib/libloc_ext.so
-#vendor/lib/liblowi_client.so
-#vendor/lib/libquipc_os_api.so
-#vendor/lib/libquipc_ulp_adapter.so
-#vendor/lib/libulp2.so
-#vendor/lib/libxtadapter.so
-#vendor/lib/libxtwifi_ulp_adaptor.so
-#vendor/lib/libxtwifi_zpp_adaptor.so
-#vendor/lib/libxt_native.so
+lib/libloc_eng.so
+lib/libloc_core.so
 
 # Graphics - from bacon
 vendor/lib/egl/eglsubAndroid.so
@@ -147,9 +152,6 @@ vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libOpenVG.so
-#vendor/lib/librs_adreno_sha1.so
-#vendor/lib/librs_adreno.so
-#vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
 
@@ -161,10 +163,8 @@ etc/firmware/a330_pm4.fw
 
 # IMS - currently unused but have dependencies to qmi
 bin/imsdatadaemon
-bin/imsqmidaemon #
+bin/imsqmidaemon
 bin/ims_rtp_daemon
-#etc/permissions/ims.xml
-#-framework/imslibrary.jar
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-imsdpl.so
 vendor/lib/lib-imsqimf.so
@@ -201,18 +201,13 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 
-# Moto
-#bin/batt_health
-#bin/dbvc_atvc_property_set
-#bin/hardware_revisions.sh
-#bin/refuse
 
 # Perf
-bin/mpdecision #
+bin/mpdecision
 vendor/lib/libqc-opt.so
 
 # Postprocessing
-bin/mm-pp-daemon #
+bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
 vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
@@ -226,8 +221,6 @@ vendor/lib/libdsnetutils.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
-#vendor/lib/libqdi.so
-#vendor/lib/libqdp.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_qmux.so
@@ -238,53 +231,28 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
 # Radio
-#-app/qcrilmsgtunnel.apk
-#bin/netmgrd
-bin/qmuxd #
-bin/rfs_access #
-bin/rild #
-bin/rmt_storage #
-#bin/qmi_motext_hook
-#etc/permissions/qcnvitems.xml
-#etc/permissions/qcrilhook.xml
-#-framework/qcnvitems.jar
-#-framework/qcrilhook.jar
-#lib/libadropbox.so
-#lib/libmdmcutback.so
-#lib/libmotext_inf.so
-#lib/libqmimotext.so
+bin/qmuxd
+bin/rfs_access
+bin/rild
+bin/rmt_storage
 lib/libqsap_sdk.so
 lib/libril.so
-#vendor/lib/libnetmgr.so
-#vendor/lib/libril-qc-qmi-1.so
+lib/librilutils.so
 vendor/lib/libril-qcril-hook-oem.so
 
 # Sensors
 #bin/akmd8963
 
-# Touch fw
-#etc/firmware/aps-Falc-01210000-0121-falcon.tdat
-#etc/firmware/synaptics-s2316-13091704-175833-falcon.tdat
-
 # Thermal
-bin/thermal-engine #
+bin/thermal-engine
 vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
 -app/TimeService.apk
-bin/time_daemon #
+bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
-
-# Venus (media) firmware
-#etc/firmware/venus.b00
-#etc/firmware/venus.b01
-#etc/firmware/venus.b02
-#etc/firmware/venus.b03
-#etc/firmware/venus.b04
-#etc/firmware/venus.mbn
-#etc/firmware/venus.mdt
 
 # WiFi
 bin/ptt_socket_app

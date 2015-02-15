@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
